@@ -7,5 +7,19 @@
 }
 
 body {
-  @apply min-h-screen bg-slate-950 text-slate-100;
+  @apply min-h-screen bg-slate-950 text-slate-100 antialiased;
+  background-image:
+    radial-gradient(circle at 10% 10%, rgba(14, 165, 233, 0.2), transparent 30%),
+    radial-gradient(circle at 90% 20%, rgba(6, 182, 212, 0.16), transparent 35%),
+    radial-gradient(circle at 50% 100%, rgba(15, 23, 42, 0.9), rgba(2, 6, 23, 1));
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(148, 163, 184, 0.5) transparent;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-break: break-word;
 }
